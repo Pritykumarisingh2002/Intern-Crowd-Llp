@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    background: #eaeff4;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 0 5px #999999;
+}
+
+.login .col-left,
+.login .col-right {
+    padding: 30px;
+    display: flex;
+}
+
+.login .col-left {
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: #0eb582;;
+}
+
+.login .col-right {
+    padding: 60px 30px;
+    width: 50%;
+    margin-left: -10%;
+}
+
+@media(max-width: 575px) {
+    .login .container {
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .login .col-left,
+    .login .col-right {
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+    }
+    .login .col-right {
+        padding: 30px;
+    }
+}
+
+.login .login-text {
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+}
+
+.login .login-text h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login .login-text p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.login .login-text .btn {
+    display: inline-block;
+    font-family: poppins;
+    padding: 7px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #0eb582;
+    outline: none;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    transition: .3s;
+}
+
+.login .login-text .btn:hover {
+    color: #0eb582;
+    box-shadow: inset 150px 0 0 0 #ffffff;
+}
+
+.login .login-form {
+    position: relative;
+    width: 100%;
+}
+
+.login .login-form h2 {
+    margin: 0 0 15px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.login .login-form p {
+    margin: 0 0 10px 0;
+    text-align: left;
+    color: #666666;
+    font-size: 15px;
+}
+
+.login .login-form p:last-child {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.login .login-form p a {
+    color: #0eb582;;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login .login-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    letter-spacing: .5px;
+}
+
+.login .login-form p:last-child label {
+    width: 60%;
+    float: left;
+}
+
+.login .login-form label span {
+    color: #ff574e;
+    padding-left: 2px;
+}
+
+.login .login-form input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+}
+
+.login .login-form input:focus {
+    border-color: #ff574e;
+}
+
+.login .login-form button,
+.login .login-form input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    color: #0eb582;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #0eb582;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 0 #0eb582;
+    transition: .3s;
+}
+
+.login .login-form button:hover,
+.login .login-form input[type=submit]:hover {
+    color: #ffffff;
+    box-shadow: inset 250px 0 0 0 #0eb582;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #0eb582;
+  }
+  
+  section {
+    padding: 5rem 10%;
+  }
+  
+.heading-link {
+    text-align: center;
+    background: url(../images/heading-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .heading-link h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #050505;
+  }
+  
+  .heading-link p {
+    font-size: 2rem;
+    line-height: 2;
+    color: #080808;
+  }
+  
+  .heading-link p a {
+    color: #0eb582;
+  }
+  
+  .heading-link p a:hover {
+    text-decoration: underline;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: #070707;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid #0eb582;
+    background: #f0fdfa;
+    color: #0eb582;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .btn:hover {
+    background: #0eb582;
+    color: #fff;
+  }
+  
+  .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(219, 218, 218);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000;
+  }
+  
+  .header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: #0eb582;
+    font-weight: bolder;
+  }
+  
+  .header .logo i {
+    color: #0eb582;
+  }
+  
+  .header .navbar {
+    position: relative;
+  }
+  
+  .header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #050404;
+    display: none;
+  }
+  
+  .header .navbar #close-navbar:hover {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .header .navbar a {
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #010101;
+  }
+  
+  .header .navbar a:hover {
+    color: #0eb582;
+  }
+  
+  .header .icons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #040404;
+    margin-left: 1.5rem;
+  }
+  
+  .header .icons div:hover {
+    color: #0eb582;
+  }
+  
+  .header #menu-btn {
+    display: none;
+  }
+ 
